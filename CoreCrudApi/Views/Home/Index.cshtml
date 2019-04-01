@@ -1,0 +1,52 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+
+<div class="container" style="display: none;">
+    <div class="row">&nbsp;</div>
+    <div class="row">
+        <div class="col-6">&nbsp;</div>
+        <div class="col-6">
+            User..........<input type="text" id="userInput" />
+            <br />
+            Message...<input type="text" id="messageInput" />
+            <input type="button" id="sendButton" value="Send Message" />
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <hr />
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-6">&nbsp;</div>
+        <div class="col-6">
+            <ul id="messagesList"></ul>
+        </div>
+    </div>
+</div>
+
+
+<h1>All User List </h1>
+<hr />
+<div class="card-block table-border-style">
+    <div class="table-responsive">
+        <table id="tblCustomers" class="table table-xs table-bordered table-hover table-styling">
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>IsActive?</th>
+            </tr>
+
+            <tbody class="tbodyX"></tbody>
+
+        </table>
+    </div>
+
+</div>
+
+<script src="~/lib/signalr/dist/browser/signalr.js"></script>
+<script src="~/js/chat.js"></script>
