@@ -75,10 +75,10 @@ namespace Utils.Infrastructure
 
 
 
-    public class FileLogger_TopUp
+    public class FileLoggerUP
     {
         private static readonly object LockObj = new object();
-        private static string FilePath = @"C:\Log\TopUp\";
+        private static string FilePath = @"C:\Log\Up\";
 
         public static void Info(string str, string settlementDate)
         {
@@ -141,10 +141,10 @@ namespace Utils.Infrastructure
         }
     }
 
-    public class FileLogger_Withdraw
+    public class FileLoggerWD
     {
         private static readonly object LockObj = new object();
-        private static string FilePath = @"C:\Log\Withdraw\";
+        private static string FilePath = @"C:\Log\WD\";
 
         public static void Info(string str, string settlementDate)
         {
